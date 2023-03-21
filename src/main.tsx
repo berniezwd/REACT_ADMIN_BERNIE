@@ -3,14 +3,14 @@ import App from './App'
 import './index.css'
 import 'antd/dist/reset.css'
 import 'antd/dist/reset.css'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, HashRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import store from './store'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <BrowserRouter>
+  <HashRouter>
     <Provider store={store}>
       <App />
     </Provider>
-  </BrowserRouter>,
+  </HashRouter>,
 )

@@ -5,6 +5,7 @@ import HeaderBar from './HeaderBar/HeaderBar'
 import ContentBar from './ContentBar/ContentBar'
 
 export default function LayoutCom(props: Golbal.IChildren) {
+  console.log('props.children', props.children)
   return (
     <Layout className="min-h-screen">
       <SiderBar />

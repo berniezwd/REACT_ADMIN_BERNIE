@@ -2,26 +2,26 @@ import { lazy } from 'react'
 
 import { MailOutlined, SettingOutlined } from '@ant-design/icons'
 
-// const LayoutCom = lazy(() => import('../Layout/Layout'))
-// const Dashboard = lazy(() => import('../pages/Dashboard/Dashboard'))
-// const Login = lazy(() => import('../pages/Login/Login'))
-// const Main = lazy(() => import('../pages/Main/Main'))
-// const Role = lazy(() => import('../pages/Role/Role'))
-// const User = lazy(() => import('../pages/User/User'))
-// const Menu = lazy(() => import('../pages/Menu/Menu'))
-// const Column = lazy(() => import('../pages/Column/Column'))
-// const Category = lazy(() => import('../pages/Category/Category'))
-// const Error = lazy(() => import('../pages/Error/404'))
+const LayoutCom = lazy(() => import('../Layout/Layout'))
+const Dashboard = lazy(() => import('../pages/Dashboard/Dashboard'))
+const Login = lazy(() => import('../pages/Login/Login'))
+const Main = lazy(() => import('../pages/Main/Main'))
+const Role = lazy(() => import('../pages/Role/Role'))
+const User = lazy(() => import('../pages/User/User'))
+const Menu = lazy(() => import('../pages/Menu/Menu'))
+const Column = lazy(() => import('../pages/Column/Column'))
+const Category = lazy(() => import('../pages/Category/Category'))
+const Error = lazy(() => import('../pages/Error/404'))
 
-import LayoutCom from '../Layout/Layout'
-import Dashboard from '../pages/Dashboard/Dashboard'
-import Login from '../pages/Login/Login'
-import Role from '../pages/Role/Role'
-import User from '../pages/User/User'
-import Menu from '../pages/Menu/Menu'
-import Category from '../pages/Category/Category'
-import Column from '../pages/Column/Column'
-import Error from '../pages/Error/404'
+// import LayoutCom from '../Layout/Layout'
+// import Dashboard from '../pages/Dashboard/Dashboard'
+// import Login from '../pages/Login/Login'
+// import Role from '../pages/Role/Role'
+// import User from '../pages/User/User'
+// import Menu from '../pages/Menu/Menu'
+// import Category from '../pages/Category/Category'
+// import Column from '../pages/Column/Column'
+// import Error from '../pages/Error/404'
 
 const routes = [
   {

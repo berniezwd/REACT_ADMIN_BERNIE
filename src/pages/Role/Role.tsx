@@ -5,7 +5,7 @@ function mockFetch() {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(true)
-    }, 5000)
+    }, 2000)
   })
 }
 export default function Role() {

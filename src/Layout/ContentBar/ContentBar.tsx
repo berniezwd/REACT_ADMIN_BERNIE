@@ -7,9 +7,9 @@ const { Content } = Layout
 
 function LoadingCom() {
   return (
-    // <Loading className="LoadingPage">
-    <h2>页面加载中...</h2>
-    // </Loading>
+    <Loading className="LoadingPage">
+      <h2>页面加载中...</h2>
+    </Loading>
   )
 }
 
@@ -25,7 +25,7 @@ export default function ContentBar(props: Golbal.IChildren) {
   return (
     <>
       <Content className="p-10 bg-gray-300 m-10">
-        <React.Suspense fallback={<LoadingCom />}>{isParent ? props.children : <Outlet />}</React.Suspense>
+        <React.Suspense fallback={<LoadingCom />}>{props.children ? props.children : <Outlet />}</React.Suspense>
       </Content>
     </>
   )

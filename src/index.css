@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* 覆盖taiwindcss原有的基础样式 */
+@layer base {
+  html,body{
+    font-family: 'JetBrainsMono-Regular';
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-weight: 500;
+    src: url(./assets/font/JetBrainsMono-Regular.woff2) format('woff2'),
+  }
+}
+
+/* 定义全局的组件样式 */
+@layer components {
+  .tounick-btn{
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+  }
+}

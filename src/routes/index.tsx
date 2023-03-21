@@ -12,6 +12,7 @@ const Menu = lazy(() => import('../pages/Menu/Menu'))
 const Column = lazy(() => import('../pages/Column/Column'))
 const Category = lazy(() => import('../pages/Category/Category'))
 const Error = lazy(() => import('../pages/Error/404'))
+
 const routes = [
   {
     path: '/',

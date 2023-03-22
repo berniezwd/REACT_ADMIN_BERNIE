@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bin</title>
+    <style>
+      .input-fill {
+        width: 100%;
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.5;
+        outline: none;
+        padding: 20px 16px 6px;
+        border: 1px solid transparent;
+        background: #f5f5fa;
+        border-radius: 10px;
+        transition: border-color 0.25s;
+      }
+      .input-fill:placeholder-shown::placeholder {
+        color: transparent;
+      }
+      .input-fill-box {
+        width: 50%;
+        position: relative;
+      }
+      .input-label {
+        position: absolute;
+        left: 16px;
+        top: 14px;
+        pointer-events: none;
+        color: #bec1d9;
+        padding: 0 2px;
+        transform-origin: 0 0;
+        pointer-events: none;
+        transition: all 0.25s;
+      }
+      .input-fill:not(:placeholder-shown) ~ .input-label,
+      .input-fill:focus ~ .input-label {
+        transform: scale(0.75) translate(0px, -14px);
+      }
+      .input-fill:focus {
+        border: 2px solid #1d31aa;
+      }
+
+      .clear {
+        position: absolute;
+        top: 10px;
+        right: -20px;
+        display: none;
+        transition: all 0.25s;
+      }
+      .input-fill::-ms-clear {
+        display: none;
+      }
+      .input-fill:not(:placeholder-shown) + .clear {
+        display: inline;
+      }
+
+      .input-fill:valid {
+        border-color: green;
+        box-shadow: inset 5px 0 0 green;
+      }
+      .input-fill:not(:placeholder-shown):invalid {
+        border-color: red;
+        box-shadow: inset 5px 0 0 red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="input-fill-box">
+      <input
+        class="input-fill"
+        placeholder="邮箱"
+        pattern="^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$"
+        required />
+      <a href="javascript:" class="clear">close</a>
+      <label class="input-label">邮箱</label>
+    </div>
+  </body>
+</html>

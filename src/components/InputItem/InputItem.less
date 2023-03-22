@@ -1,0 +1,63 @@
+.input-fill-box {
+  width: 100%;
+  position: relative;
+}
+.input-fill {
+  width: 100%;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  outline: none;
+  padding: 18px 16px 6px;
+  border: 1px solid transparent;
+  transition: border-color 0.25s;
+  background: transparent;
+  color: #ffffff;
+}
+.input-fill:placeholder-shown::placeholder {
+  color: transparent;
+}
+.input-label {
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  pointer-events: none;
+  color: #999999;
+  padding: 0 2px;
+  transform-origin: 0 0;
+  pointer-events: none;
+  transition: all 0.25s;
+  font-size: 16px;
+}
+.input-fill:not(:placeholder-shown) ~ .input-label,
+.input-fill:focus ~ .input-label {
+  transform: scale(0.75) translate(0px, -14px);
+}
+.input-fill:focus {
+  // border-bottom: 2px solid #1d31aa;
+}
+
+.clear {
+  position: absolute;
+  bottom: 16px;
+  right: 20px;
+  display: none;
+  transition: all 0.25s;
+}
+.input-fill::-ms-clear {
+  display: none;
+}
+.input-fill:not(:placeholder-shown) + .clear {
+  display: inline;
+}
+
+.input-fill:valid {
+  // border-color: green;
+  // box-shadow: inset 5px 0 0 green;
+}
+.input-fill:not(:placeholder-shown):invalid {
+  border-color: red;
+  .input-fill:focus {
+    border-bottom: unset!important;
+  }
+}

@@ -16,6 +16,9 @@
     font-weight: 500;
     src: url(./assets/font/JetBrainsMono-Regular.woff2) format('woff2'),
   }
+  h1{
+    margin: 0!important;
+  }
 }
 
 /* 定义全局的组件样式 */

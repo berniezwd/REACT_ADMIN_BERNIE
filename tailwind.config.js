@@ -17,7 +17,7 @@ function generateFontSize() {
   let data = {
     small: '1rem',
   }
-  for (let i = 1; i <= 20; i++) {
+  for (let i = 1; i <= 200; i++) {
     data[`${i}`] = `${i / 10}rem`
   }
   return data
